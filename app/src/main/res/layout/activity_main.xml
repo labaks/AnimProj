@@ -1,17 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:background="#ccc"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="30dp">
 
-    <labaks.animproj.GifView
-        android:id="@+id/gif_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:id="@+id/textinfo"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="info..." />
+        android:weightSum="4"
+        android:layout_marginBottom="40dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="2"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ad__00021"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/user_bg"
+        android:drawableLeft="@drawable/user2_1"
+        android:drawablePadding="10dp"
+        android:hint="USERNAME"
+        android:padding="5dp"
+        android:textColor="#fff"
+        android:textColorHint="#fff" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/pass_bg"
+        android:drawableLeft="@drawable/pass2_1"
+        android:drawablePadding="10dp"
+        android:hint="PASSWORD"
+        android:padding="5dp"
+        android:textColor="#fff"
+        android:textColorHint="#fff" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:text="LOG IN"
+        android:textStyle="bold"
+        android:textSize="18sp" />
 </LinearLayout>
