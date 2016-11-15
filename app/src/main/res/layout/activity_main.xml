@@ -3,7 +3,7 @@
     android:id="@+id/mainLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ccc"
+    android:background="#888"
     android:orientation="vertical"
     android:paddingLeft="30dp"
     android:paddingRight="30dp"
@@ -12,22 +12,95 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:weightSum="4"
-        android:layout_marginBottom="40dp">
+        android:layout_marginBottom="40dp"
+        android:weightSum="4">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
 
-        <ImageView
+        <RelativeLayout
             android:id="@+id/logo"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="2"
-            android:scaleType="fitCenter"
-            android:src="@drawable/ad__00021"/>
+            android:layout_weight="2">
+
+
+            <ImageView
+                android:id="@+id/logoBlue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logo_blue" />
+
+            <ImageView
+                android:id="@+id/logoYellow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logo_yellow" />
+
+            <ImageView
+                android:id="@+id/logoGreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logo_green" />
+
+            <ImageView
+                android:id="@+id/logoOrange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logo_orange" />
+
+            <ImageView
+                android:id="@+id/logoRed1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logo_red" />
+
+
+            <ImageView
+                android:id="@+id/logoRed2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logo_red" />
+
+            <ImageView
+                android:id="@+id/logoRed3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logo_red" />
+
+            <ImageView
+                android:id="@+id/logoWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logo_white" />
+
+            <ImageView
+                android:id="@+id/logoCross"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logo_cross" />
+
+        </RelativeLayout>
 
     </LinearLayout>
 
@@ -62,6 +135,6 @@
         android:layout_height="wrap_content"
         android:background="#fff"
         android:text="LOG IN"
-        android:textStyle="bold"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:textStyle="bold" />
 </LinearLayout>
